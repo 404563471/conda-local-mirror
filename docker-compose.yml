@@ -1,0 +1,10 @@
+# web server
+conda-repo:
+  image: conda-repo:test
+  ports:
+     - "8080:80"
+  volumes:
+    - ./mirror/bioconda:/channel/bioconda:rw
+    - ./mirror/r:/channel/r:rw
+    - ./mirror/main:/channel/main:rw
+    - ./mirror/noarch:/channel/noarch:rw

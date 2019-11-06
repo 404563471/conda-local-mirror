@@ -1,0 +1,5 @@
+name: docker-conda-channel-dev
+dependencies:
+  - python
+  - pip:
+    - watchdog
